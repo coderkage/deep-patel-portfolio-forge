@@ -18,12 +18,12 @@ const HeroSection = () => {
               className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight animate-fade-in-up" 
               style={{ animationDelay: '0.4s' }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-foreground/80">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-foreground/80 dark:to-primary/80">
                 {portfolioData.name}
               </span>
             </h1>
             <p 
-              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 animate-fade-in-up" 
+              className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto md:mx-0 animate-fade-in-up leading-relaxed md:leading-loose" 
               style={{ animationDelay: '0.6s' }}
             >
               {portfolioData.tagline}

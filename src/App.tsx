@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import BackToTopButton from "./components/BackToTopButton"; // Import the new component
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             </BrowserRouter>
           </main>
           <Footer />
+          <BackToTopButton /> {/* Add the button here */}
         </div>
       </TooltipProvider>
     </ThemeProvider>

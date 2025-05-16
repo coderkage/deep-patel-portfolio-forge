@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack, githubLink, index }) => {
   return (
-    <div className="bg-card border border-border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full animate-fade-in-up"
+    <div className="bg-card border border-border rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full animate-fade-in-up transform hover:scale-[1.03] hover:border-primary"
          style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
       <h3 className="text-xl font-semibold mb-2 text-primary">{title}</h3>
       <p className="text-foreground/80 text-sm mb-4 flex-grow">{description}</p>
