@@ -1,15 +1,17 @@
 
-import { Github } from "lucide-react";
+import { BookOpenText, Github } from "lucide-react"; // Added BookOpenText
+import { Link } from "react-router-dom"; // Added Link for internal navigation
 
 interface ProjectCardProps {
   title: string;
   description: string;
   techStack: string[];
-  githubLink: string;
+  // githubLink: string; // We'll show this on the detail page
+  slug: string; // Added slug
   index: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack, githubLink, index }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack, slug, index }) => {
   return (
     <div className="bg-card border border-border rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full animate-fade-in-up transform hover:scale-[1.03] hover:border-primary"
          style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
@@ -25,14 +27,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack
           ))}
         </div>
       </div>
-      <a
-        href={githubLink}
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        to={`/project/${slug}`}
         className="inline-flex items-center text-sm text-primary hover:underline mt-auto"
       >
-        <Github className="mr-2 h-4 w-4" /> View on GitHub
-      </a>
+        <BookOpenText className="mr-2 h-4 w-4" /> View Details
+      </Link>
     </div>
   );
 };

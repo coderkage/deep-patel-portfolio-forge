@@ -1,4 +1,3 @@
-
 export const portfolioData = {
   name: "Deep Patel",
   tagline: "AI Researcher | NLP Enthusiast | Tech Educator",
@@ -16,21 +15,24 @@ export const portfolioData = {
   projects: [
     {
       title: "RumbleRadar",
+      slug: "rumble-radar",
       description: "NLP framework for disaster tweet geotagging.",
       techStack: ["spaCy", "PyTorch", "Streamlit"],
-      githubLink: "https://github.com/DeepPatel3910/RumbleRadar", // Replace with actual link
+      githubLink: "https://github.com/DeepPatel3910/RumbleRadar",
     },
     {
       title: "QRClassify",
+      slug: "qr-classify",
       description: "QR code counterfeit detection using CV and ML/DL.",
       techStack: ["CV", "ML/DL", "ResNet18"],
-      githubLink: "https://github.com/DeepPatel3910/QRClassify", // Replace with actual link
+      githubLink: "https://github.com/DeepPatel3910/QRClassify",
     },
     {
       title: "QA Chatbot",
+      slug: "qa-chatbot",
       description: "BERT-based custom QA bot with optimized response latency.",
       techStack: ["BERT", "NLP", "Python"],
-      githubLink: "https://github.com/DeepPatel3910/QAChatbot", // Replace with actual link
+      githubLink: "https://github.com/DeepPatel3910/QAChatbot",
     },
   ],
   contact: {
